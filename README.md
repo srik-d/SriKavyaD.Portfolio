@@ -1,2 +1,2 @@
 # SriKavyaD.Portfolio
-Portfolio showcasing my skills , using html , css , js
+A sleek and responsive portfolio showcasing my projects, skills, and expertise using HTML, CSS, and JavaScript.
