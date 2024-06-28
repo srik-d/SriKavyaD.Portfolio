@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SriKavya-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- DESKTOP VIEW NAV BAR -->
+    <nav id="desktop-nav">
+      <div>
+        <img
+          src="./assets/profile.png"
+          alt="small profile picture"
+          class="header-img"
+        />
+      </div>
+      <div class="logo">SriKavya Dasari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MINIMIZED NAVBAR VIEW -->
+    <nav id="hamburger-nav">
+      <div>
+        <img
+          src="./assets/profile.png"
+          alt="small profile picture"
+          class="header-img"
+        />
+      </div>
+      <div class="logo">SriKavya Dasari</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <h1 class="section__text__p1">Hello, I'm</h1>
+        <h2 class="title">SriKavya!</h2>
+        <p class="section__text__p2">Data Analysis | Web Development | AI-ML</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/srikavya___portfolio.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/srikavya-dasari/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href= 'https://github.com/srik-d'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p style="font-weight: bold">
+                B.Tech Computer Science (SRM University)
+              </p>
+              <ul>
+                <li>2021 - present</li>
+                <li>CGPA: 8.98/10.0</li>
+              </ul>
+              <p style="font-weight: bold">
+                Class 12th - The Board of Intermediate Education Of AP
+              </p>
+              <ul>
+                <li>2019 - 2021</li>
+                <li>Marks: 910/1000</li>
+              </ul>
+              <p style="font-weight: bold">
+                Class 10th - The Board of Secondary Education Of AP
+              </p>
+              <ul>
+                <li>2018 - 2019</li>
+                <li>CGPA: 10/10</li>
+              </ul>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Internships</h3>
+              <br />
+              <p style="font-weight: bold">
+                Full Stack Developer Intern - Next24Tech Jan 2024 - Mar 2024
+              </p>
+              <ul>
+                <li>
+                  Developed ScribbleSpot, a fullstack blog using the MERN stack.
+                </li>
+              </ul>
+              <br />
+              <p style="font-weight: bold">
+                Web Developer Intern - Apssdc June 2023 - Aug 2023
+              </p>
+
+              <ul>
+                <li>
+                  Developed the 'Productivity Manager' using Python, Django,
+                  HTML, and CSS.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am currently pursuing Computer Science at SRM University-AP,
+              where I actively foster collaboration and leverage my strong
+              aptitude for learning. With a natural enthusiasm for group
+              dynamics and robust communication skills, I am always eager to
+              learn new things and excited to explore opportunities that lie
+              ahead. Passionate about web development, Data Science,AI-ML , I
+              thrive on challenges that expand my skills and knowledge in the
+              dynamic fields above.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <!-- SKILLS - TECHNICAL AND SOFT SKILLS  -->
+    <section id="skills">
+      <p class="section__text__p1">Know more about my</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skills-section">
+          <h2 class="skills-title">Technical Skills</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>C++</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Python</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>HTML, CSS, JavaScript , Bootstrap</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>AWS,SQL</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>MERN Stack, Django Framework</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Data Analysis,Machine Learning</h3>
+            </div>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h2 class="skills-title">Soft Skills</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Communication Skills</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Team Management & Co-ordination</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Problem Solving</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Leadership</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Adaptive</h3>
+            </div>
+            <div class="skill-item">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Accountability</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/63/09/1b/63091b3478a24420f7c074d40937193f.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Caloric Extraction Prediction (ML)
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/srik-d/Caloric-Expenditure-Prediction'"
+              >
+                Github
+              </button>
+              <!-- <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/60/0c/20/600c20b0a57e3db560b90fe8b9dc29e8.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              ScribbleSpot-Blog (Mern Stack)
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/srik-d/ScibbleSpot-Blog'"
+              >
+                Github
+              </button>
+              <!-- <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/7a/dd/85/7add8579ff4c4d9cd183d1b3f231c607.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Web Scraping Ecommerce site
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <!-- <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <a href="https://github.com/srik-d" style="font-weight: bold">
+          FOR MORE PROJECTS : PLEASE CHECK OUT MY GITHUB
+        </a>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:dasari.srikvya@gmail.com">Gmail</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/srikavya-dasari/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 SriKavya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
